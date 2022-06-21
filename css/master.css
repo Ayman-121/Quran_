@@ -1,0 +1,173 @@
+.list-picker {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #eee;
+  position: fixed;
+  top: 0px;
+  right: 10px;
+  direction: rtl;
+  overflow: auto;
+  height: 100vh;
+  z-index: 1000;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.list-picker .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.list-picker .card h3 {
+  color: #795548;
+  position: relative;
+  text-align: center;
+  padding: 10px 20px 10px 70px;
+  width: calc(100% - 10px);
+  margin-left: 10px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.list-picker .card h3::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 2px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #795548;
+}
+.list-picker .card p {
+  padding: 10px 10px 10px 0;
+}
+.list-picker .card span {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  color: #9E9E9E;
+  font-weight: 300;
+  text-transform: capitalize;
+  z-index: -1;
+}
+.list-picker .card span i {
+  margin: 0 5px;
+}
+
+#text {
+  max-width: calc(100% - 203px);
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  top: 100px;
+}
+#text p {
+  padding-right: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: 10px 10px 0 10px;
+  line-height: 2;
+  text-align: right;
+  background-color: #eee;
+  position: relative;
+  padding-left: 10px;
+  word-spacing: 2px;
+  border-radius: 3px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#text p:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+#text .my-hr {
+  background-color: red;
+}
+
+.exit-button {
+  background-color: #f00;
+  padding: 10px 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: fixed;
+  top: 1%;
+  left: 0%;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.number {
+  color: red;
+}
+
+h1.my-name {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #9E9E9E;
+}
+
+@media (max-width: 590px) {
+  .header {
+    display: -ms-grid !important;
+    display: grid !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.header {
+  background-color: #ddd;
+  padding: 10px 20px;
+  border-radius: 0 0 10px 10px;
+  position: fixed;
+  width: calc(100% - 254px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 0;
+  z-index: 10;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.header .theme-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 30px;
+}
+.header .theme-box .theme {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/*# sourceMappingURL=master.css.map */
