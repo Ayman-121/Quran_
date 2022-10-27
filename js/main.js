@@ -112,7 +112,7 @@ req.onreadystatechange = function () {
               var aya = document.createElement("p")
               aya.innerHTML = data2.verses[j].text + " ( " + data2.verses[j].id + " )"
               textPlace.appendChild(aya)
-              document.title = 'سورة ' + data2.name
+              document.title = 'القران الكريم'
             }
 
             let exitButton = document.createElement("div")
